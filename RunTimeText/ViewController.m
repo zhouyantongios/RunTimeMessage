@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "UIImage+MyImage.h"
 @interface ViewController ()
 
 @end
@@ -16,7 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    UIImage *image = [UIImage imageNamed:@"old"];
+    UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
+    imageView.image = image;
+    [self.view addSubview:imageView];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -1,0 +1,17 @@
+1>能动态生成一个类,一个成员变量,一个方法
+2>能动态修改一个类,一个成员变量,一个方法
+3>能动态删除一个类,一个成员变量,一个方法
+
+
+常见函数,头文件
+#import <objc/runtime.h>
+class_copyIvarList : 获得某个类内部的所有成员变量
+class_copyMethodList : 获得某个类内部的所有方法
+class_getInstanceMethod : 获得某个具体的实例方法(对象方法,减号- 开头)
+class_getClassMethod : 获得某个具体的类方法(加号+开头)
+method_exchangeImplementations : 交换两个方法的实现
+
+--------------------------------------------------------
+#import<objc/message.h>     //消息机制
+objc_msgSend(...)
+

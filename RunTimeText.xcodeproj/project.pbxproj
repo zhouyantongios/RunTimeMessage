@@ -13,6 +13,10 @@
 		267F4E8A1C8FF6E4002FC931 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 267F4E881C8FF6E4002FC931 /* Main.storyboard */; };
 		267F4E8C1C8FF6E4002FC931 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 267F4E8B1C8FF6E4002FC931 /* Assets.xcassets */; };
 		267F4E8F1C8FF6E4002FC931 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 267F4E8D1C8FF6E4002FC931 /* LaunchScreen.storyboard */; };
+		267F4E971C8FF7E9002FC931 /* File in Resources */ = {isa = PBXBuildFile; fileRef = 267F4E961C8FF7E9002FC931 /* File */; };
+		267F4E9D1C8FFD2B002FC931 /* UIImage+MyImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 267F4E9C1C8FFD2B002FC931 /* UIImage+MyImage.m */; };
+		267F4EA41C900B76002FC931 /* old_iOS8+.png in Resources */ = {isa = PBXBuildFile; fileRef = 267F4EA21C900B75002FC931 /* old_iOS8+.png */; };
+		267F4EA51C900B76002FC931 /* old.png in Resources */ = {isa = PBXBuildFile; fileRef = 267F4EA31C900B75002FC931 /* old.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,11 @@
 		267F4E8B1C8FF6E4002FC931 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		267F4E8E1C8FF6E4002FC931 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		267F4E901C8FF6E4002FC931 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		267F4E961C8FF7E9002FC931 /* File */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
+		267F4E9B1C8FFD2B002FC931 /* UIImage+MyImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MyImage.h"; sourceTree = "<group>"; };
+		267F4E9C1C8FFD2B002FC931 /* UIImage+MyImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MyImage.m"; sourceTree = "<group>"; };
+		267F4EA21C900B75002FC931 /* old_iOS8+.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "old_iOS8+.png"; sourceTree = "<group>"; };
+		267F4EA31C900B75002FC931 /* old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = old.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +69,13 @@
 			children = (
 				267F4E821C8FF6E4002FC931 /* AppDelegate.h */,
 				267F4E831C8FF6E4002FC931 /* AppDelegate.m */,
+				267F4E961C8FF7E9002FC931 /* File */,
 				267F4E851C8FF6E4002FC931 /* ViewController.h */,
 				267F4E861C8FF6E4002FC931 /* ViewController.m */,
+				267F4E9B1C8FFD2B002FC931 /* UIImage+MyImage.h */,
+				267F4E9C1C8FFD2B002FC931 /* UIImage+MyImage.m */,
+				267F4EA21C900B75002FC931 /* old_iOS8+.png */,
+				267F4EA31C900B75002FC931 /* old.png */,
 				267F4E881C8FF6E4002FC931 /* Main.storyboard */,
 				267F4E8B1C8FF6E4002FC931 /* Assets.xcassets */,
 				267F4E8D1C8FF6E4002FC931 /* LaunchScreen.storyboard */,
@@ -136,7 +150,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				267F4E971C8FF7E9002FC931 /* File in Resources */,
+				267F4EA41C900B76002FC931 /* old_iOS8+.png in Resources */,
 				267F4E8F1C8FF6E4002FC931 /* LaunchScreen.storyboard in Resources */,
+				267F4EA51C900B76002FC931 /* old.png in Resources */,
 				267F4E8C1C8FF6E4002FC931 /* Assets.xcassets in Resources */,
 				267F4E8A1C8FF6E4002FC931 /* Main.storyboard in Resources */,
 			);
@@ -150,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				267F4E871C8FF6E4002FC931 /* ViewController.m in Sources */,
+				267F4E9D1C8FFD2B002FC931 /* UIImage+MyImage.m in Sources */,
 				267F4E841C8FF6E4002FC931 /* AppDelegate.m in Sources */,
 				267F4E811C8FF6E4002FC931 /* main.m in Sources */,
 			);
