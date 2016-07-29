@@ -22,21 +22,23 @@
     method_exchangeImplementations(imageName, imageWithName);
 }
 
+
+/** 此处调用 imageName 执行交换方法后的 imageWithName */
 + (instancetype)imageWithName:(NSString *)name {
-    BOOL isIOS8 = [[UIDevice currentDevice].systemVersion floatValue] >= 8.0;
-    UIImage *image = nil;
-    if (isIOS8) {
-        NSString *newName = [name stringByAppendingString:@"_iOS8+"];
-        image = [UIImage imageWithName:newName];
-    } else {
-        //这里调用imageWithName 相当于调用imageName
-        image = [self imageWithName:name];
-    }
     
-    if (image == nil) {
-        NSLog(@"图片为空");
+    BOOL isIOS8 = [[UIDevice currentDevice].systemVersion floatValue] >= 8.0;
+    
+    NSString *newName = nil;
+    
+    if (isIOS8) {
+        newName = [name stringByAppendingString:@"_iOS8+"];
+    } else {
+        newName = name;
     }
-    return image;
+    /** 此处调用 imageWithName 执行交换方法后的 imageName */
+    UIImage *image = [UIImage imageWithName:newName];
+    
+    return image ? image:[UIImage imageWithName:name];
 }
 
 @end
